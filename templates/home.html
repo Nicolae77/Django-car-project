@@ -1,0 +1,14 @@
+{% extends 'car/base.html' %}
+{% block content %}
+
+    <h1> HOME PAGE</h1>
+    {% for project in projects %}
+
+            <h2 class="home-project-title">{{ project.title }}</h2>
+            <p class="home-project-description">{{ project.description }}</p>
+            <img class="item-image" src="{{project.image.url}}" width="1500px" height="900px">
+        
+    {% endfor %}
+
+{% endblock %}
+
