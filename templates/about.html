@@ -2,6 +2,7 @@
 {% block content %}
 <h1>ABOUT PAGE</h1>
 {% for project in projects %}
+
 <h2 class="about-project-title">{{ project.title }}</h2>
 <p class="about-project-description">{{ project.description }}</p>
 <img src="{{project.image.url}}" width="1500px" height="900px">
